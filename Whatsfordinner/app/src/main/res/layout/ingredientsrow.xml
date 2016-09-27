@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="7"
+     >
+
+
+    <LinearLayout
+        android:id="@+id/info_box"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <EditText
+            android:id="@+id/ingredientsName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:hint="@string/enterIngredientName"/>
+
+        <EditText
+            android:id="@+id/unit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="@string/enterUnits"/>
+
+        <EditText
+            android:id="@+id/count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="@string/enterCount"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/removeButton"
+        android:maxHeight="75dip"
+        android:background="@drawable/remove"/>
+</LinearLayout>

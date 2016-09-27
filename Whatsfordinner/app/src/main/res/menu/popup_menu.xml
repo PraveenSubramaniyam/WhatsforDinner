@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/one"
+        android:title="Author Name: Praveen Subramaniyam"/>
+	
+	<item
+        android:id="@+id/two"
+        android:title="Software Version Number: 1.0.0"/>
+      
+    <item
+        android:id="@+id/three"
+        android:title="No Copyright"/>
+        
+</menu>

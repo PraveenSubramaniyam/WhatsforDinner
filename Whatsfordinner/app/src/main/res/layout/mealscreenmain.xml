@@ -1,0 +1,27 @@
+<!--
+ Top-level content view for the layout fragment sample.  This version is
+     for display when in landscape: we can fit both titles and dialog.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <fragment
+        android:id="@+id/titles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        class="com.example.praveensubramaniyam.whatsfordinner.MealsCalendarMenuFragment" />
+
+    <FrameLayout
+        android:id="@+id/mealsScreenBottomViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="?android:attr/detailsElementBackground" />
+
+</LinearLayout>
